@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Ubuntu&display=swap"
+        rel="stylesheet" />
+
+    <title>✨Dance Now</title>
+</head>
+
+<body>
+    <section id="title">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">✨DanceNow</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#calendar">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#studios">Studios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Classes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Dance Selection Button with Dropdown -->
+        <div class="dropdown-dance">
+            <button onclick="myFunction(this)" class="dropbtn dance">
+                All Dances
+            </button>
+            <div id="db-dance" class="dropdown-content">
+                <a href="#">Jazz</a>
+                <a href="#">Hiphop</a>
+                <a href="#">Urban</a>
+                <a href="#">Pole Dance</a>
+                <a href="#">Salsa</a>
+                <a href="#">Poppin</a>
+                <a href="#">Kpop</a>
+            </div>
+        </div>
+
+        <!-- Big Heading-->
+        <div class="Heading">
+            <h1 class="big-heading">Go</h1>
+        </div>
+
+        <!-- Time Selection Button with Dropdown -->
+        <div class="dropdown-time">
+            <button onclick="myFunction(this)" class="dropbtn time">
+                Today <i class="fa-solid fa-calendar-days fa-2xs"></i>
+            </button>
+            <div id="db-time" class="dropdown-content">
+                <a href="#">Tomorrow</a>
+                <a href="#">This week</a>
+                <a href="#">Next week</a>
+                <a href="#">This month</a>
+            </div>
+        </div>
+
+        <!-- Find button -->
+        <div class="find-button">
+            <button class="find-btn" onclick="location='#calendar'">Find</button>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="white-section">
+        <div class="container-fluid">
+            <!-- Date Picker Input-->
+            <div class="date-picker">
+                <form action="">
+                    <label for="">
+                        Choose your preferred date
+                        <input type="date" name="selected-date" min="2023-3-13" required />
+                        <span class="validity"></span>
+                        <button class="submit-btn">Submit</button>
+                    </label>
+                </form>
+            </div>
+
+
+            <!-- Calendar table -->
+            <div class="calendar-table">
+                <div class="calendar-row1">
+                    <main>
+                        <h5>Saturday <br> 7-8pm</h5>
+                    </main>
+                    <aside>
+                        <div class="row row-col-md-2 row-col-lg-4 g-4">
+                            <div class="calendar-col col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            <a href=""><img class="bookmark-icon calendar-icon"
+                                                    src="images/bookmark-icon.png" alt="bookmark-icon"></a>
+                                            <h4 class="course-title">Street Jazz</h4>
+                                            <p>Beginner</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="course-instructor">Nicole</h4>
+                                        <a class="course-location" href="">
+                                            <h4>Ivoir.es</h4>
+                                        </a>
+                                        <a href=""><img class="booking-icon calendar-icon" src="images/book-icon.png"
+                                                alt="book-icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calendar-col col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            <a href=""><img class="bookmark-icon calendar-icon"
+                                                    src="images/bookmark-icon.png" alt="bookmark-icon"></a>
+                                            <h4 class="course-title">K-pop Girls</h4>
+                                            <p>All levels</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="course-instructor">Hana</h4>
+                                        <a class="course-location" href="">
+                                            <h4>Ivoir.es</h4>
+                                        </a>
+                                        <a href=""><img class="booking-icon calendar-icon" src="images/booked-icon.png"
+                                                alt="booked-icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calendar-col col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            <a href=""><img class="bookmark-icon calendar-icon"
+                                                    src="images/bookmark-icon.png" alt="bookmark-icon"></a>
+                                            <h4 class="course-title">C-pop Choreo</h4>
+                                            <p>All levels</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="course-instructor">Jennifer</h4>
+                                        <a class="course-location" href="">
+                                            <h4>Krossline</h4>
+                                        </a>
+                                        <a href=""><img class="booking-icon calendar-icon" src="images/book-icon.png"
+                                                alt="book-icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </aside>
+                </div>
+
+                <div class="calendar-row2">
+                    <main>
+                        <h5>8-9pm</h5>
+                    </main>
+                    <aside>
+                        <div class="row row-col-md-2 row-col-lg-4 g-4">
+                            <div class="calendar-col col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            <a href=""><img class="bookmark-icon calendar-icon"
+                                                    src="images/bookmark-icon.png" alt="bookmark-icon"></a>
+                                            <h4 class="course-title">Choreo</h4>
+                                            <p>Intermediate</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="course-instructor">Ervin</h4>
+                                        <a class="course-location" href="">
+                                            <h4>Krossline</h4>
+                                        </a>
+                                        <a href=""><img class="booking-icon calendar-icon" src="images/booked-icon.png"
+                                                alt="booked-icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calendar-col col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            <a href=""><img class="bookmark-icon calendar-icon"
+                                                    src="images/bookmark-icon.png" alt="bookmark-icon"></a>
+                                            <h4 class="course-title">Hip-Hop</h4>
+                                            <p>Beginner</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="course-instructor">Jennifer</h4>
+                                        <a class="course-location" href="">
+                                            <h4>Krossline</h4>
+                                        </a>
+                                        <a href=""><img class="booking-icon calendar-icon" src="images/book-icon.png"
+                                                alt="book-icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calendar-col col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            <a href=""><img class="bookmark-icon calendar-icon"
+                                                    src="images/bookmark-icon.png" alt="bookmark-icon"></a>
+                                            <h4 class="course-title">Heels</h4>
+                                            <p>All levels</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="course-instructor">Si Yu</h4>
+                                        <a class="course-location" href="">
+                                            <h4>Ivoir.es</h4>
+                                        </a>
+                                        <a href=""><img class="booking-icon calendar-icon" src="images/book-icon.png"
+                                                alt="book-icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studios Section -->
+    <section id="studios">
+        <div class="colored-section">
+            <h2 class="section-heading"> Featured Dance Studios </h2>
+            <div class="gallery-image">
+                <div class="img-box">
+                    <img src="images/Krossline.png" alt="Krossline">
+                    <div class="transparent-box">
+                        <div class="caption">
+                            <h5>Krossline <button class="visit-site-btn"
+                                    onclick="location='https://www.krosslinedance.com/'"><span class="text"> Visit
+                                        Site</span></button></h5>
+                            <p class="opacity-low">K-pop | Popular Choreography | Street Dance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="images/UrbanElementZone.png" alt="Urban Element Zone">
+                    <div class="transparent-box">
+                        <div class="caption">
+                            <h5>Urban Element Zone <button class="visit-site-btn"
+                                    onclick="location='http://www.urban-element.ca/'"><span class="text"> Visit
+                                        Site</span></button></h5>
+                            <p class="opacity-low"> Hip-Hop | Popping | House | Dancehall</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="images/Ivoir.es.png" alt="Ivoir.es">
+                    <div class="transparent-box">
+                        <div class="caption">
+                            <h5>Ivoir.es <button class="visit-site-btn"
+                                    onclick="location='https://www.instagram.com/ivoir.es/?hl=en'"><span class="text">
+                                        Visit
+                                        Site</span></button></h5>
+                            <p class="opacity-low">Street Jazz | K-pop | Heels</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="images/UniversalDanceStudio.png" alt="Universal Dance Studio">
+                    <div class="transparent-box">
+                        <div class="caption">
+                            <h5>Universal Dance Studio <button class="visit-site-btn"
+                                    onclick="location='https://www.universaldancestudio.ca/'"><span class="text"> Visit
+                                        Site</span></button></h5>
+                            <p class="opacity-low"> Salsa | Bachata | Zumba</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="images/StudioDanseMontreal.png" alt="Studio Danse Montreal">
+                    <div class="transparent-box">
+                        <div class="caption">
+                            <h5>Studio Danse Montreal <button class="visit-site-btn"
+                                    onclick="location='https://www.studiodansemontreal.com/danses-pour-adultes/index.html'"><span
+                                        class="text"> Visit
+                                        Site</span></button></h5>
+                            <p class="opacity-low"> Salsa | Ballet | Brazilian Cardio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="images/LatinGroove.png" alt="Latin Groove">
+                    <div class="transparent-box">
+                        <div class="caption">
+                            <h5>Latin Groove <button class="visit-site-btn"
+                                    onclick="location='https://latingroove.ca/bachata-dance/#'"><span class="text">
+                                        Visit
+                                        Site</span></button></h5>
+                            <p class="opacity-low"> Salsa | Bachata | Belly Dance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Javascript Tags -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e90972d713.js" crossorigin="anonymous"></script>
+    <script src="dance.js" charset="utf-8"></script>
+</body>
+
+</html>

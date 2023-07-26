@@ -1,0 +1,457 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+/* Section */
+.colored-section {
+  background-color: #202125;
+  color: white;
+  padding-bottom: 3%;
+}
+.white-section {
+  background-color: #e7e7e7;
+  color: #434242;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 13%;
+}
+
+/* Headings */
+.big-heading {
+  color: white;
+  font-size: 6rem;
+  font-weight: 500;
+  margin: 0.9375rem auto 0 23.75rem;
+}
+
+.section-heading {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+/* Title page */
+#title {
+  background-image: url("https://cdn.pixabay.com/photo/2014/08/29/05/00/dance-430554_1280.jpg");
+  padding-bottom: 20%;
+}
+
+/* Nav Bar */
+.nav-item {
+  padding-right: 30px;
+}
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Dance Selection Button with Dropdown */
+/* Dropdown Button */
+.dance {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+  outline: 1rem solid #e7e7e7;
+  padding: 1rem;
+  position: absolute;
+  height: 10rem;
+  width: 30rem;
+}
+
+/* Dropdown button on hover & focus */
+.dance:hover,
+.dance:focus {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-dance {
+  display: inline-block;
+  margin: 9.375rem 12.5rem auto 37.5rem;
+  position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  background-color: #f1f1f1;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  font-size: 1.25rem;
+  min-width: 30rem;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+#db-dance {
+  margin-top: 10rem;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+/* Time Selection Button with Dropdown */
+.time {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 6rem;
+  font-weight: 500;
+  height: 10rem;
+  width: 30rem;
+  outline: none;
+  position: relative;
+  padding: 0.625rem;
+  transition: 0.3s;
+}
+
+.time::before {
+  content: "";
+  border-bottom: 0.5rem solid #e7e7e7;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0 0.625rem;
+  position: absolute;
+  width: 0;
+  transition: 0.3s;
+}
+
+.time:hover::before {
+  width: 100%;
+  padding: 0;
+}
+.time:active {
+  background: #e7e7e7;
+  color: black;
+  transition: none;
+}
+
+.dropdown-time {
+  display: inline-block;
+  margin: 6rem 12.5rem auto 37.5rem;
+  position: relative;
+}
+
+/* Find Button */
+.find-btn {
+  background-color: white;
+  border-radius: 1rem;
+  border-style: none;
+  color: #434242;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 1rem;
+  position: absolute;
+  height: 6rem;
+  width: 12rem;
+  margin-top: 5%;
+  margin-left: 45%;
+}
+
+.find-btn:hover,
+.find-btn:focus {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+/* Date Picker */
+.date-picker {
+  padding-bottom: 5%;
+}
+
+label {
+  align-items: center;
+  column-gap: 0.625rem;
+  display: flex;
+}
+
+input:invalid + span::after {
+  content: "✖";
+}
+
+input:valid + span::after {
+  content: "✓";
+}
+
+.submit-btn {
+  background-color: black;
+  border-radius: 1rem;
+  border-style: none;
+  color: #e7e7e7;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 16px;
+  width: 6rem;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #7f8487;
+  color: white;
+}
+
+/* Calendar Table */
+.calendar-row1,
+.calendar-row2 {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  padding-bottom: 3rem;
+}
+
+.calendar-row1 {
+  color: #4268f3e1;
+  border-color: #00abb3;
+}
+
+.calendar-row2 {
+  color: #852cc5b8;
+  border-color: #af40ffb8;
+}
+.calendar-col {
+  padding: 1% 2%;
+}
+
+.card {
+  border-left: 1rem solid;
+}
+
+.card-header {
+  border: none;
+  padding: 10% 25% 2%;
+}
+.card-body {
+  padding: 5% 25%;
+}
+
+.calendar-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 8%;
+}
+
+.bookmark-icon {
+  top: 12%;
+}
+
+.booking-icon {
+  bottom: 12%;
+}
+
+a.course-location:link,
+a.course-location:visited {
+  text-decoration: solid underline #b2b2b2;
+  color: #b2b2b2;
+}
+a.course-location:hover,
+a.course-location:active {
+  color: #434242;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* Studios Section */
+#studios {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-image img {
+  height: 15.625rem;
+  width: 21.875rem;
+  transform: scale(1);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  background-color: white;
+  box-sizing: content-box;
+  display: inline-block;
+  margin: 0.625rem;
+  height: 15.625rem;
+  width: 21.875rem;
+  overflow: hidden;
+  position: relative;
+}
+.caption {
+  bottom: 0.3125rem;
+  left: 1.25rem;
+  position: absolute;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  background-color: rgba(0, 0, 0, 0);
+  height: 15.625rem;
+  width: 21.875rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.opacity-low {
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+/* Visit Site Button */
+
+.visit-site-btn {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 1rem;
+  line-height: 1em;
+  padding: 3px;
+  text-decoration: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 2.5rem;
+}
+
+.visit-site-btn:active,
+.visit-site-btn:hover {
+  outline: 0;
+}
+
+.visit-site-btn span {
+  background-color: rgb(5, 6, 45);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+  opacity: 0.7;
+}
+
+.visit-site-btn:hover span {
+  background: none;
+}
+
+.caption {
+  width: 18.75rem;
+}
+
+@media (max-width: 1142px) {
+  .big-heading {
+    margin-left: 25%;
+  }
+  .dropdown-dance {
+    margin-left: 45%;
+  }
+  .dropdown-time {
+    margin-left: 40%;
+  }
+}
+@media (max-width: 995px) {
+  .big-heading {
+    margin-left: 15%;
+  }
+  .dropdown-dance {
+    margin-left: 35%;
+  }
+  .dropdown-time {
+    margin-left: 35%;
+  }
+  .find-button {
+    margin-right: 110%;
+  }
+}
+
+@media (max-width: 775px) {
+    .big-heading {
+        margin-left: 10%;
+        font-size: 4rem;
+    }
+    .dropdown-dance {
+        margin-left: 30%;
+    }
+    .dance{
+        font-size:3.5rem;
+        height: 8rem;
+        width: 21rem;
+    }
+    .dropdown-time {
+        margin-left: 30%;
+    }
+    .time {
+        font-size: 4rem;
+        width: 23rem;
+    }
+    .find-btn{
+        margin-left: 35%;
+    }
+    #title {
+        padding-bottom: 40%;
+    }
+}

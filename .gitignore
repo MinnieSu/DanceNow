@@ -1,0 +1,13 @@
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Build and compiled files
+dist/
+build/
+
+# Operating System specific files
+.DS_Store
+Thumbs.db
+
+node_modules/
